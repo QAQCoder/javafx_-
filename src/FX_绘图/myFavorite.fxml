@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #B3C3AD;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FX_绘图.MyFavoriteController">
+   <center>
+      <TableView fx:id="tab2_TableView" editable="true" prefHeight="200.0" prefWidth="200.0" tableMenuButtonVisible="true" BorderPane.alignment="CENTER">
+        <columns>
+            <TableColumn fx:id="column_id" prefWidth="75.0" text="编号" />
+          <TableColumn fx:id="column_date" prefWidth="75.0" text="添加日期" />
+          <TableColumn fx:id="column_show" prefWidth="75.0" text="展示" />
+            <TableColumn fx:id="column_code" prefWidth="75.0" text="复制代码" />
+            <TableColumn fx:id="column_tag" prefWidth="75.0" text="颜色标签" />
+            <TableColumn fx:id="column_delete" prefWidth="75.0" text="删除" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </center>
+</BorderPane>
